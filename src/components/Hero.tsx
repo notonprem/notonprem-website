@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Cloud, Shield, ServerCog, Mail } from "lucide-react";
+import { Cloud, Shield, ServerCog } from "lucide-react";
 
 export const Hero = () => {
   return (
@@ -33,25 +33,6 @@ export const Hero = () => {
                 <p className="text-gray-200">{item.desc}</p>
               </div>
             ))}
-          </div>
-
-          {/* Get in touch section */}
-          <div className="mt-20 w-full max-w-2xl rounded-lg bg-white/10 p-8 backdrop-blur-sm">
-            <div className="flex items-center justify-center gap-3 text-2xl font-semibold">
-              <Mail className="h-8 w-8" />
-              <h2>Get in touch</h2>
-            </div>
-            <p className="mt-4 text-lg text-gray-200">
-              Have questions or want to join our community? We'd love to hear from you!
-            </p>
-            <Button 
-              size="lg" 
-              variant="secondary" 
-              className="mt-6 bg-accent hover:bg-accent-hover"
-              onClick={() => window.location.href = 'mailto:contact@notonprem.com'}
-            >
-              Contact Us
-            </Button>
           </div>
         </div>
       </div>
