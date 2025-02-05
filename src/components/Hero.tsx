@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Cloud, Shield, BookOpen, Mail } from "lucide-react";
+import { Cloud, Shield, ServerCog, Mail } from "lucide-react";
 
 export const Hero = () => {
   return (
@@ -16,7 +16,7 @@ export const Hero = () => {
             <Button size="lg" variant="secondary" className="bg-accent hover:bg-accent-hover">
               Join Community
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 bg-[#8B5CF6] hover:bg-[#7C3AED]">
               Explore Resources
             </Button>
           </div>
@@ -25,7 +25,7 @@ export const Hero = () => {
             {[
               { icon: Cloud, title: "Cloud Technology", desc: "Master modern cloud platforms" },
               { icon: Shield, title: "Cybersecurity", desc: "Learn security best practices" },
-              { icon: BookOpen, title: "DevOps", desc: "Bridge development and operations" },
+              { icon: ServerCog, title: "DevOps", desc: "Bridge development and operations" },
             ].map((item) => (
               <div key={item.title} className="flex flex-col items-center">
                 <item.icon size={40} className="mb-4" />
