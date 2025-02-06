@@ -10,12 +10,12 @@ export const Hero = () => {
           <img 
             src="/lovable-uploads/7ef5d360-a8ad-40df-9412-66b84f6c2af3.png" 
             alt="notOnPrem Logo" 
-            className="h-12 w-12"
+            className="h-16 w-16"
           />
-          <span className="text-3xl font-bold text-[#45C4B0]">notOnPrem</span>
+          <span className="text-4xl font-bold text-[#45C4B0]">notOnPrem</span>
         </div>
         <div className="flex flex-col items-center text-center">
-          <h1 className="mb-6 text-5xl font-bold leading-tight md:text-6xl">
+          <h1 className="mb-6 text-4xl font-bold leading-tight md:text-5xl">
             Learn with tech nerds, professionals and enthusiasts
           </h1>
           <p className="mb-8 text-xl text-gray-300 md:text-2xl">
