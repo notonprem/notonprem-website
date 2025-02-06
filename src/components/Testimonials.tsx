@@ -38,7 +38,7 @@ export const Testimonials = () => {
     <section className="bg-white py-20">
       <div className="container">
         <h2 className="mb-12 text-left text-4xl font-bold text-primary">
-          Trusted by learners!
+          Voices of Growth
         </h2>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((testimonial, index) => (
