@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Mail } from "lucide-react";
 import { Input } from "@/components/ui/input";
@@ -34,7 +35,7 @@ export const GetInTouch = () => {
                 placeholder="First Name"
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
-                className="bg-white/5 text-white placeholder:text-gray-400"
+                className="rounded-full bg-white/5 text-white placeholder:text-gray-400"
                 required
               />
               <Input
@@ -42,14 +43,14 @@ export const GetInTouch = () => {
                 placeholder="Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="bg-white/5 text-white placeholder:text-gray-400"
+                className="rounded-full bg-white/5 text-white placeholder:text-gray-400"
                 required
               />
               <Textarea
                 placeholder="Your message"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                className="min-h-[150px] bg-white/5 text-white placeholder:text-gray-400"
+                className="min-h-[150px] rounded-3xl bg-white/5 text-white placeholder:text-gray-400"
                 required
               />
             </div>
@@ -58,7 +59,7 @@ export const GetInTouch = () => {
                 type="submit"
                 size="lg" 
                 variant="secondary" 
-                className="bg-accent hover:bg-accent-hover"
+                className="rounded-full bg-accent px-8 hover:bg-accent-hover"
               >
                 Send Message
               </Button>

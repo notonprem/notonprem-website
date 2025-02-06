@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Cloud, Shield, ServerCog } from "lucide-react";
 
@@ -16,7 +17,7 @@ export const Hero = () => {
             <Button size="lg" variant="secondary" className="bg-accent hover:bg-accent-hover">
               Join Community
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 bg-[#8B5CF6] hover:bg-[#7C3AED]">
+            <Button size="lg" variant="secondary" className="bg-[#1A3152] hover:bg-[#234470]">
               Explore Resources
             </Button>
           </div>
