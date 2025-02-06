@@ -1,3 +1,4 @@
+
 import { Rocket, Users, BookOpen, Target, MessageSquare, Award } from "lucide-react";
 
 export const Features = () => {
@@ -35,18 +36,18 @@ export const Features = () => {
   ];
 
   return (
-    <section className="py-20">
+    <section className="py-12">
       <div className="container">
-        <h2 className="mb-12 text-center text-4xl font-bold text-primary">What We Offer</h2>
+        <h2 className="mb-12 text-left text-4xl font-bold text-white">Why we rock!</h2>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="rounded-lg border border-gray-200 p-6 transition-all hover:shadow-lg"
+              className="rounded-lg border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-all hover:shadow-lg"
             >
-              <feature.icon className="mb-4 h-8 w-8 text-secondary" />
-              <h3 className="mb-2 text-xl font-semibold text-primary">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <feature.icon className="mb-4 h-8 w-8 text-[#45C4B0]" />
+              <h3 className="mb-2 text-xl font-semibold text-white">{feature.title}</h3>
+              <p className="text-gray-300">{feature.description}</p>
             </div>
           ))}
         </div>
