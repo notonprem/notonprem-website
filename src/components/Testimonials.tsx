@@ -35,22 +35,22 @@ export const Testimonials = () => {
   };
 
   return (
-    <section className="bg-white py-20">
+    <section className="bg-[#1A1F2C] py-20">
       <div className="container">
-        <h2 className="mb-12 text-left text-4xl font-bold text-primary">
+        <h2 className="mb-12 text-left text-4xl font-bold text-white">
           Voices of Growth
         </h2>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="rounded-xl bg-muted p-6 shadow-lg transition-transform hover:-translate-y-1"
+              className="rounded-xl bg-[#222222] p-6 shadow-lg transition-transform hover:-translate-y-1"
             >
               <div className="mb-4 flex">{renderStars(testimonial.rating)}</div>
-              <p className="mb-4 text-gray-700">{testimonial.content}</p>
-              <div className="border-t border-gray-200 pt-4">
-                <p className="font-semibold text-primary">{testimonial.name}</p>
-                <p className="text-sm text-gray-600">{testimonial.role}</p>
+              <p className="mb-4 text-gray-300">{testimonial.content}</p>
+              <div className="border-t border-gray-700 pt-4">
+                <p className="font-semibold text-white">{testimonial.name}</p>
+                <p className="text-sm text-gray-400">{testimonial.role}</p>
               </div>
             </div>
           ))}
