@@ -1,4 +1,3 @@
-
 import { Star } from "lucide-react";
 
 export const Testimonials = () => {
@@ -35,7 +34,7 @@ export const Testimonials = () => {
   };
 
   return (
-    <section className="bg-[#1A1F2C] py-20">
+    <section className="bg-[#232836] py-20">
       <div className="container">
         <h2 className="mb-12 text-left text-4xl font-bold text-white">
           Voices of Growth

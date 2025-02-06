@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
@@ -25,7 +24,7 @@ export const BlogSection = () => {
   ];
 
   return (
-    <section className="bg-[#1A1F2C] py-20">
+    <section className="bg-[#232836] py-20">
       <div className="container">
         <div className="mb-12 text-center">
           <h2 className="mb-4 text-4xl font-bold text-white">Latest Articles</h2>
