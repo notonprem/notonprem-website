@@ -5,16 +5,22 @@ import { BlogSection } from "@/components/BlogSection";
 import { GetInTouch } from "@/components/GetInTouch";
 import { Testimonials } from "@/components/Testimonials";
 import { Newsletter } from "@/components/Newsletter";
+import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-[#1A1F2C]">
+      <Navigation />
       <Hero />
       <Features />
       <Testimonials />
-      <BlogSection />
+      <div className="py-0">
+        <BlogSection />
+      </div>
       <Newsletter />
       <GetInTouch />
+      <Footer />
     </div>
   );
 };

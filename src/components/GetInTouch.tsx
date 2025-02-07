@@ -68,9 +68,9 @@ export const GetInTouch = () => {
           </div>
           <div className="flex items-center justify-center">
             <img 
-              src="/lovable-uploads/7ef5d360-a8ad-40df-9412-66b84f6c2af3.png" 
-              alt="notOnPrem Logo" 
-              className="max-w-md" 
+              src="/lovable-uploads/e4cad49b-ec5f-4529-8123-8631bf74129b.png" 
+              alt="Happy Dev" 
+              className="max-w-md rounded-lg object-cover" 
             />
           </div>
         </div>
