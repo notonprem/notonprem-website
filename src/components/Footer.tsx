@@ -1,5 +1,5 @@
 
-import { Instagram, Twitter, Tiktok, Youtube } from "lucide-react";
+import { Instagram, Twitter, Youtube } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -13,9 +13,6 @@ export const Footer = () => {
             </a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#45C4B0] transition-colors">
               <Twitter className="h-6 w-6" />
-            </a>
-            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#45C4B0] transition-colors">
-              <Tiktok className="h-6 w-6" />
             </a>
             <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#45C4B0] transition-colors">
               <Youtube className="h-6 w-6" />
