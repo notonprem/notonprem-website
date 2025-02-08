@@ -1,4 +1,3 @@
-
 import { Instagram, Twitter, Youtube } from "lucide-react";
 
 export const Footer = () => {
@@ -17,6 +16,11 @@ export const Footer = () => {
             <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#45C4B0] transition-colors">
               <Youtube className="h-6 w-6" />
             </a>
+          </div>
+
+          {/* Construction notice */}
+          <div className="mt-8 p-3 border border-amber-700/30 rounded-md bg-amber-950/10">
+            <p className="text-amber-200/70 text-sm">This site is still under construction.</p>
           </div>
         </div>
       </div>
