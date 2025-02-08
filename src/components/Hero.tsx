@@ -13,15 +13,12 @@ export const Hero = () => {
           <p className="mb-8 text-xl text-gray-300 md:text-2xl">
             Join our community of tech enthusiasts learning Cloud DevOps, Systems and Cybersecurity together
           </p>
-          <p className="mb-8 text-xl text-gray-300 md:text-2xl">
-            Let's make learning fun again
-          </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button size="lg" variant="secondary" className="rounded-full bg-[#45C4B0] hover:bg-[#3AA697]">
-              Join Community
+              Join Us
             </Button>
             <Button size="lg" variant="secondary" className="rounded-full bg-[#2D3748] hover:bg-[#3D4A61]">
-              Explore Resources
+              Who we are
             </Button>
           </div>
 
