@@ -11,7 +11,7 @@ export const Hero = () => {
             Learn with tech nerds, professionals and enthusiasts
           </h1>
           <p className="mb-8 text-xl text-gray-300 md:text-2xl">
-            Join our community of tech enthusiasts learning cloud, DevOps, and cybersecurity together
+            Join our community of tech enthusiasts learning Cloud DevOps, Systems and Cybersecurity together
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button size="lg" variant="secondary" className="rounded-full bg-[#45C4B0] hover:bg-[#3AA697]">
