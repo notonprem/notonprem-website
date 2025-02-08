@@ -68,8 +68,8 @@ export const GetInTouch = () => {
           </div>
           <div className="flex items-center justify-center">
             <img 
-              src="/lovable-uploads/e4cad49b-ec5f-4529-8123-8631bf74129b.png" 
-              alt="Happy Dev" 
+              src="/lovable-uploads/5bc527ea-1fcb-4566-8d64-347e5926bf9f.png" 
+              alt="Quantum Computing Visualization" 
               className="max-w-md rounded-lg object-cover" 
             />
           </div>
