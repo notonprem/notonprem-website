@@ -7,12 +7,14 @@ import { Testimonials } from "@/components/Testimonials";
 import { Newsletter } from "@/components/Newsletter";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { QuantumVisual } from "@/components/QuantumVisual";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-[#1A1F2C]">
       <Navigation />
       <Hero />
+      <QuantumVisual />
       <Features />
       <Testimonials />
       <div className="py-0">
