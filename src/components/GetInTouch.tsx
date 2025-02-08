@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Mail, Copy, Check } from "lucide-react";
 import { Input } from "@/components/ui/input";
@@ -12,7 +11,7 @@ export const GetInTouch = () => {
   const [message, setMessage] = useState("");
   const [copied, setCopied] = useState(false);
   const { toast } = useToast();
-  
+
   const emailAddress = "hola@not-onprem.com";
 
   const handleCopyEmail = async () => {
@@ -50,20 +49,20 @@ export const GetInTouch = () => {
             <p className="mt-4 text-center text-lg text-gray-300">
               Have questions or want to join our community? We'd love to hear from you!
             </p>
-            
+
             {/* Email copy section */}
             <div className="mt-6 flex items-center justify-center gap-2">
               <Input
                 type="text"
                 value={emailAddress}
                 readOnly
-                className="max-w-[250px] rounded-full bg-white/5 text-white"
+                className="w-[180px] rounded-full bg-white/5 text-white"
               />
               <Button
                 variant="outline"
                 size="icon"
                 onClick={handleCopyEmail}
-                className="rounded-full hover:bg-white/10"
+                className="rounded-full bg-white/5 hover:bg-white/10 border-white/20"
               >
                 {copied ? (
                   <Check className="h-4 w-4 text-green-500" />
@@ -100,10 +99,10 @@ export const GetInTouch = () => {
                 />
               </div>
               <div className="flex justify-center">
-                <Button 
+                <Button
                   type="submit"
-                  size="lg" 
-                  variant="secondary" 
+                  size="lg"
+                  variant="secondary"
                   className="rounded-full bg-[#45C4B0] px-8 hover:bg-[#3AA697] text-white"
                 >
                   Send Message
@@ -112,10 +111,10 @@ export const GetInTouch = () => {
             </form>
           </div>
           <div className="flex items-center justify-center">
-            <img 
-              src="/lovable-uploads/5bc527ea-1fcb-4566-8d64-347e5926bf9f.png" 
-              alt="Quantum Computing Visualization" 
-              className="max-w-md rounded-lg object-cover" 
+            <img
+              src="/lovable-uploads/5bc527ea-1fcb-4566-8d64-347e5926bf9f.png"
+              alt="Quantum Computing Visualization"
+              className="max-w-md rounded-lg object-cover"
             />
           </div>
         </div>
