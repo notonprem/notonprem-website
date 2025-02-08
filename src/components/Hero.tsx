@@ -8,14 +8,6 @@ export const Hero = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
-            <div className="flex items-center gap-4 mb-16">
-              <img 
-                src="/lovable-uploads/7ef5d360-a8ad-40df-9412-66b84f6c2af3.png" 
-                alt="notOnPrem Logo" 
-                className="h-16 w-16"
-              />
-              <span className="text-4xl font-bold text-[#45C4B0]">notOnPrem</span>
-            </div>
             <div className="flex flex-col">
               <h1 className="mb-6 text-4xl font-bold leading-tight md:text-5xl">
                 Learn with tech nerds, professionals and enthusiasts
@@ -38,7 +30,7 @@ export const Hero = () => {
                   { icon: Shield, title: "Cybersecurity", desc: "Learn security best practices" },
                   { icon: ServerCog, title: "DevOps", desc: "Bridge development and operations" },
                 ].map((item) => (
-                  <div key={item.title} className="flex flex-col items-center">
+                  <div key={item.title} className="flex flex-col items-center text-center">
                     <item.icon size={40} className="mb-4 text-[#45C4B0]" />
                     <h3 className="mb-2 text-xl font-semibold">{item.title}</h3>
                     <p className="text-gray-300">{item.desc}</p>
