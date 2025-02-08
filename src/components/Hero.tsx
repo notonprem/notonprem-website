@@ -6,14 +6,6 @@ export const Hero = () => {
   return (
     <div className="relative bg-gradient-to-b from-[#1A1F2C] to-[#2D3748] py-20 text-white">
       <div className="container mx-auto px-6">
-        <div className="mb-16 flex items-center gap-4">
-          <img 
-            src="/lovable-uploads/7ef5d360-a8ad-40df-9412-66b84f6c2af3.png" 
-            alt="notOnPrem Logo" 
-            className="h-16 w-16"
-          />
-          <span className="text-4xl font-bold text-[#45C4B0]">notOnPrem</span>
-        </div>
         <div className="flex flex-col items-center text-center">
           <h1 className="mb-6 text-4xl font-bold leading-tight md:text-5xl">
             Learn with tech nerds, professionals and enthusiasts
