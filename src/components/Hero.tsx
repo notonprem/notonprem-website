@@ -11,6 +11,9 @@ export const Hero = () => {
             Learn with tech nerds, professionals and enthusiasts
           </h1>
           <p className="mb-8 text-xl text-gray-300 md:text-2xl">
+            Let's make learning fun again
+          </p>
+          <p className="mb-8 text-xl text-gray-300 md:text-2xl">
             Join our community of tech enthusiasts learning Cloud DevOps, Systems and Cybersecurity together
           </p>
           <div className="flex flex-wrap justify-center gap-4">
