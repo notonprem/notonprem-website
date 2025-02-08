@@ -1,19 +1,41 @@
 
 import { Button } from "@/components/ui/button";
-import { Mail } from "lucide-react";
+import { Mail, Copy, Check } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
+import { useToast } from "@/components/ui/use-toast";
 
 export const GetInTouch = () => {
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [copied, setCopied] = useState(false);
+  const { toast } = useToast();
+  
+  const emailAddress = "hola@not-onprem.com";
+
+  const handleCopyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(emailAddress);
+      setCopied(true);
+      toast({
+        description: "Email copied to clipboard!",
+        duration: 2000,
+      });
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      toast({
+        description: "Failed to copy email",
+        variant: "destructive",
+      });
+    }
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Form submitted:", { firstName, email, message });
-    window.location.href = `mailto:contact@notonprem.com?subject=Contact from ${firstName}&body=${message}`;
+    window.location.href = `mailto:${emailAddress}?subject=Contact from ${firstName}&body=${message}`;
   };
 
   return (
@@ -28,6 +50,29 @@ export const GetInTouch = () => {
             <p className="mt-4 text-center text-lg text-gray-300">
               Have questions or want to join our community? We'd love to hear from you!
             </p>
+            
+            {/* Email copy section */}
+            <div className="mt-6 flex items-center justify-center gap-2">
+              <Input
+                type="text"
+                value={emailAddress}
+                readOnly
+                className="max-w-[250px] rounded-full bg-white/5 text-white"
+              />
+              <Button
+                variant="outline"
+                size="icon"
+                onClick={handleCopyEmail}
+                className="rounded-full hover:bg-white/10"
+              >
+                {copied ? (
+                  <Check className="h-4 w-4 text-green-500" />
+                ) : (
+                  <Copy className="h-4 w-4 text-white" />
+                )}
+              </Button>
+            </div>
+
             <form onSubmit={handleSubmit} className="mt-8 space-y-6">
               <div className="space-y-4">
                 <Input
