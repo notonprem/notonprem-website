@@ -7,12 +7,10 @@ import { Testimonials } from "@/components/Testimonials";
 import { Newsletter } from "@/components/Newsletter";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
-import { FloatingHeader } from "@/components/FloatingHeader";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-[#1A1F2C]">
-      <FloatingHeader />
       <Navigation />
       <Hero />
       <Features />
