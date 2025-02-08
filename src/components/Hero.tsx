@@ -18,7 +18,7 @@ export const Hero = () => {
               Join Us
             </Button>
             <Button size="lg" variant="secondary" className="rounded-full bg-[#2D3748] hover:bg-[#3D4A61]">
-              Who we are
+              About Us
             </Button>
           </div>
 
